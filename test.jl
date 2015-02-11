@@ -1,4 +1,4 @@
-import Outliers
+using Outliers
 using Base.Test
 
 a = randn(10)
@@ -8,3 +8,6 @@ o, idc = Outliers.outliers(a)
 b = [randn(10), 100]
 o, idc = Outliers.outliers(b)
 @test !isempty(o)
+
+c = randn(50,2)
+

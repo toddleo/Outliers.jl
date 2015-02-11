@@ -10,7 +10,7 @@ This package will be extended for more functionalities in the future.
 
 This method works with 1 dimensional numerical vectors. Suppose we have a random vector of float numbers, then manually append a relatively big number at the end, and we want to find out the outlier(s) among such vector. This can be done using `outliers` function as following:
 
-```
+```Julia
 using Outliers
 
 a = [randn(10), 100.] # Generate 10 random float numbers, and append a relatively large number as "outlier"
